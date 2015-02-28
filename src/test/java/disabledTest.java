@@ -37,11 +37,10 @@ public class disabledTest {
     @After
     public void tearDown() {
     }
-    @Ignore("Not Ready to Run")  
-   @org.testng.annotations.Test
+   @Ignore("Not Ready to Run")  
+   @org.testng.annotations.Test(enabled = false)
     public void testIndexOutOfBoundsException() {
-    ArrayList emptyList = new ArrayList();
-    Object o = emptyList.get(0);
-    System.out.println("The test is disabled");
+        ArrayList emptyList = new ArrayList();
+        System.out.println("The test is disabled");
     }
 }

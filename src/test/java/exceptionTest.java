@@ -36,9 +36,10 @@ public class exceptionTest {
     @After
     public void tearDown() {
     }
-    @Test(expected=IndexOutOfBoundsException.class)
-    public void testIndexOutOfBoundsException() {
-    ArrayList emptyList = new ArrayList();
-    Object o = emptyList.get(0);
+
+    @org.testng.annotations.Test(timeOut = 100)
+    public void testTimeout() throws Exception
+    {
+        Thread.sleep(99);
     }
 }

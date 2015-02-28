@@ -37,11 +37,6 @@ public class objectEqualityTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //assertEquals(str1, str2);
-    // @Test
-    // public void hello() {}
     @org.testng.annotations.Test
     public void testFalse(){
         objectEquality ob = new objectEquality();

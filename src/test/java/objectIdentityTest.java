@@ -37,7 +37,7 @@ public class objectIdentityTest {
     public void tearDown() {
     }
     @org.testng.annotations.Test
-    public void testWithMatchers() {
+    public void testIdentity() {
         assertThat("this string", is("this string"));
     }
 }
